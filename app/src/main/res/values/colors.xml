@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#453823</color>
+    <color name="colorPrimaryDark">#382E1C</color>
+    <color name="colorAccent">#453823</color>
+
+    <color name="numViewBackStart">#C0A172</color>
+    <color name="numViewBackEnd">#C0A172</color>
+    <color name="numViewBackCenter">#BAA378</color>
+    <color name="numViewBackStroke">#453823</color>
+    <color name="numViewText">#382E1C</color>
+    <color name="numGenText">#C0A172</color>
+    <color name="numGenStart">#382E1C</color>
+    <color name="numGenEnd">#382E1C</color>
+    <color name="numGenCenter">#453823</color>
+</resources>

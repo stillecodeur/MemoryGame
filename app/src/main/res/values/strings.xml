@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="match_fail_title">Wrong Tile !!</string>
+    <string name="match_fail_message">Please try again.</string>
+    <string name="finish_title">Game Over !!</string>
+    <string name="finish_message">Play Again.</string>
+
+</resources>

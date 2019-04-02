@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="memo_num_text_size">24sp</dimen>
+    <dimen name="num_gen_text_size">36sp</dimen>
+</resources>
