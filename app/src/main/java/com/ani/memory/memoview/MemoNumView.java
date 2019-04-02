@@ -15,6 +15,7 @@ public class MemoNumView extends RelativeLayout implements MemoNum {
     private View container;
     private TextView tvNumber;
     private int number;
+    private boolean isOpen = false;
 
 
     public MemoNumView(Context context) {
@@ -62,13 +63,20 @@ public class MemoNumView extends RelativeLayout implements MemoNum {
     }
 
     @Override
+    public boolean isOpen() {
+        return isOpen;
+    }
+
+    @Override
     public void show() {
         tvNumber.setVisibility(View.VISIBLE);
+        isOpen = true;
     }
 
     @Override
     public void hide() {
         tvNumber.setVisibility(View.INVISIBLE);
+        isOpen = false;
     }
 
     private void updateView() {

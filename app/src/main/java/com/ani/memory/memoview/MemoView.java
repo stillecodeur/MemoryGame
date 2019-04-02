@@ -67,8 +67,6 @@ public class MemoView extends ConstraintLayout implements Memo, RandomNumberList
         randomNumberList = new ArrayList<>();
 
 
-
-
     }
 
 
@@ -78,6 +76,8 @@ public class MemoView extends ConstraintLayout implements Memo, RandomNumberList
             public void onClick(View v) {
 
                 if (touchDisabled) return;
+
+                if (memoNumView.isOpen()) return;
 
                 if (onMatchListener == null) return;
 

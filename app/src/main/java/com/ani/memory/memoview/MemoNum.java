@@ -5,4 +5,6 @@ public interface MemoNum extends MemoVisibility {
 
     int getNumber();
 
+    boolean isOpen();
+
 }

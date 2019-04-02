@@ -1,4 +1,4 @@
-package com.ani.memory;
+package com.ani.memory.ui;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -7,6 +7,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.ani.memory.R;
 import com.ani.memory.memoview.Memo;
 import com.ani.memory.memoview.MemoView;
 import com.ani.memory.numgenview.NumGeneratorView;
