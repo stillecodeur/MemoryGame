@@ -16,6 +16,11 @@ import java.util.Stack;
 
 public class NumGeneratorView extends ConstraintLayout implements NumGenerator, RandomNumberListener {
 
+
+    /**
+     * View to show a single number
+     */
+
     private Context context;
     private TextView tvGenNum;
     private List<Integer> randomNumberList;

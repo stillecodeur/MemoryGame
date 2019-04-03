@@ -14,7 +14,9 @@ import java.util.List;
 
 public class MemoView extends ConstraintLayout implements Memo, RandomNumberListener {
 
-
+    /**
+     * View to show 3x3 grid
+     */
 
 
     private Context context;

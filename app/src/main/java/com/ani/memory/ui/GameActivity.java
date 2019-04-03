@@ -74,12 +74,19 @@ public class GameActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Shuffles the numbers in MemoView and MemoGenView
+     */
     private void randomize() {
         mMemoView.shuffle();
         mNumGenView.shuffle();
         mMemoView.start();
     }
 
+
+    /**
+     * Starts the game with showing numbers for 5 seconds
+     */
     private void startGame() {
         mMemoView.show();
         mMemoView.disableTouch();
@@ -94,6 +101,9 @@ public class GameActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Creates AlertDialog to inform user that he has chosen a wrong tile.
+     */
     private void createMatchAlert() {
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         builder.setTitle(getString(R.string.match_fail_title)).setMessage(R.string.match_fail_message).setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -107,6 +117,9 @@ public class GameActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Creates AlertDialog to inform user that the game has finished.
+     */
     private void createFinishAlert() {
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         builder.setTitle(getString(R.string.finish_title)).setMessage(getString(R.string.finish_message)).setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -123,10 +136,16 @@ public class GameActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Alerts user that game has finished.
+     */
     private void showFinishAlert() {
         mFinishAlert.show();
     }
 
+    /**
+     * Alerts user that he has chosen a wrong tile.
+     */
     private void showMatchAlert() {
         mAlertMatch.show();
     }
