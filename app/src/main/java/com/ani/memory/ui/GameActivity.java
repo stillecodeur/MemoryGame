@@ -133,6 +133,14 @@ public class GameActivity extends AppCompatActivity {
 
 
         mFinishAlert = builder.create();
+
+        mFinishAlert.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialog) {
+                randomize();
+                startGame();
+            }
+        });
     }
 
 
