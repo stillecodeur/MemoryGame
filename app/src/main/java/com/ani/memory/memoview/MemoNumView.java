@@ -11,6 +11,11 @@ import com.ani.memory.R;
 
 public class MemoNumView extends RelativeLayout implements MemoNum {
 
+
+    /**
+     * View to show a single number
+     */
+
     private Context context;
     private View container;
     private TextView tvNumber;
