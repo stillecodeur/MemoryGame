@@ -15,6 +15,8 @@ import java.util.List;
 public class MemoView extends ConstraintLayout implements Memo, RandomNumberListener {
 
 
+
+
     private Context context;
     private MemoNumView numView1, numView2, numView3, numView4, numView5, numView6, numView7, numView8, numView9;
     private int numberToBeRevealed;
@@ -75,20 +77,24 @@ public class MemoView extends ConstraintLayout implements Memo, RandomNumberList
             @Override
             public void onClick(View v) {
 
-                if (touchDisabled) return;
+                if (touchDisabled || memoNumView.isOpen()) return;
 
-                if (memoNumView.isOpen()) return;
+                if (onMatchListener == null) {
+                    throw new RuntimeException(context.toString()
+                            + " must implement OnMatchListener");
+                }
 
-                if (onMatchListener == null) return;
+                if (onFinishListener == null) {
+                    throw new RuntimeException(context.toString()
+                            + " must implement OnFinishListener");
+                }
 
                 if (numberToBeRevealed == memoNumView.getNumber()) {
                     memoNumView.show();
                     revealCount += 1;
 
                     if (revealCount == 9) {
-                        if (onFinishListener != null) {
-                            onFinishListener.onFinish();
-                        }
+                        onFinishListener.onFinish();
                     } else {
                         onMatchListener.onSuccess();
                     }
